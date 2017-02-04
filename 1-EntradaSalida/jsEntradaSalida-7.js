@@ -6,25 +6,27 @@ function sumar()
 {	
 	var NumeroUno;
 	var NumeroDos;
+	var Resultado;
+
 	NumeroUno=document.getElementById('numeroUno').value;
 	NumeroDos=document.getElementById('numeroDos').value;
 	// alert("La suma es " + NumeroUno + NumeroDos);
 	NumeroUno=parseInt(NumeroUno);
 	NumeroDos=parseInt(NumeroDos);
-	alert(("La suma es "+NumeroUno+NumeroDos));
+	resultado=NumeroUno + NumeroDos
+	alert("La suma es "+resultado);
 
 }
 
 function restar()
 {
-	var NumeroUno;
-	var NumeroDos;
 	NumeroUno=document.getElementById('numeroUno').value;
 	NumeroDos=document.getElementById('numeroDos').value;
 	// alert("La suma es " + NumeroUno + NumeroDos);
 	NumeroUno=parseInt(NumeroUno);
 	NumeroDos=parseInt(NumeroDos);
-	alert(NumeroUno - NumeroDos); 
+	resultado=NumeroUno-NumeroDos
+	alert("La resta es "+resultado)
 
 }
 
@@ -35,7 +37,9 @@ function multiplicar()
 	// alert("La suma es " + NumeroUno + NumeroDos);
 	NumeroUno=parseInt(NumeroUno);
 	NumeroDos=parseInt(NumeroDos);
-	alert(NumeroUno * NumeroDos);
+	resultado=NumeroUno*NumeroDos
+	alert("La multiplicación es "+resultado)
+
 }
 
 function dividir()
@@ -46,6 +50,7 @@ function dividir()
 	// alert("La suma es " + NumeroUno + NumeroDos);
 	NumeroUno=parseInt(NumeroUno);
     NumeroDos=parseInt(NumeroDos);
-	alert(NumeroUno/NumeroDos);
+	resultado=NumeroUno/NumeroDos
+	alert("La división es "+resultado)
 }
 
