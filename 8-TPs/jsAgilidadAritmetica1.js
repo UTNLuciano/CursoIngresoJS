@@ -7,14 +7,24 @@ y una de las cuatro operaciones básicas (suma, resta,
 se debe informar si el resultado es el correcto o no.
 */
 var respuesta;
+var resultado
+var primerNumero
+var segundoNumero
+var resultadoUsuario
+
 function comenzar()
 {
-
-	
+	primerNumero=Math.floor(Math.random() * 10) + 1;
+	segundoNumero=Math.floor(Math.random() * 10) + 1;
+	document.getElementById('PrimerNumero').value=primerNumero;
+	document.getElementById('SegundoNumero').value=segundoNumero;
 
 }//FIN DE LA FUNCIÓN
 function Responder()
 {
-	
+	resultadoUsuario=document.getElementById("Respuesta");
+	if(resultadoRandom==resultadoUsuario){
+		alert("Su resultado es correcto")
+	}
 
 }//FIN DE LA FUNCIÓN
