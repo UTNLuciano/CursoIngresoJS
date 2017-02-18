@@ -17,6 +17,11 @@ function Mostrar()
 	var promedioNotas //acumular notas y sacar promedio
 	var promedoEdadMujeres // edad promedio de las mujeres
 	var cantidadMujeresNotaParMenores //cantidadMujeresNotaParMenores +1 o ++
+	var bandera="nadie"; 
+	var nombreDelDiez;
+	var	edadDelDiez;
+	var	sexoDelDiez;
+
 
 	// declarar variables
 	
@@ -72,7 +77,14 @@ function Mostrar()
 			}
 		}
 
-// cuantas mujeres y hombres desaprobaron
+//primero que se saco 10
+		if(nota==10&&bandera=="nadie")
+		{
+			nombreDelDiez=nombre;
+			edadDelDiez=edad;
+			sexoDelDiez=sexo;
+		}
+		// cuantas mujeres y hombres desaprobaron
 		if(nota<4)
 		{
 			if(sexo=="m");
@@ -91,9 +103,11 @@ function Mostrar()
 	
 	}
 
-	//while(respuesta=!no)
-	//promedioNotas=acumuladorNotas/contador
+	
+}//FIN DE LA FUNCIÓN
+
+//while(respuesta=!no)
+	//promedioNotas=acumuladorWNotas/contador
 
 	//para donde se pide nota: //cantidad de personas aprobadas
 	// cuantas mujeres y hombres desaprobaron
-}	//FIN DE LA FUNCIÓN
