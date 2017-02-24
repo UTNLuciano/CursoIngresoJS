@@ -10,10 +10,11 @@ function Mostrar()
 	var edadPersonaMasViejaSinMascota;
 	var contadorGatos=0;
 	var edadDeGato;
-	var nombreDeGato
+	var nombreDeGato;
 	var contadorDeGatosMenoresACinco=0
+	var contadorNombreDeGato=0
 
-	for(;contador<1000;)
+	for(;contador<3;)
 	{
 		mascota=prompt("¿Tiene mascota si o no?");
 
@@ -31,7 +32,15 @@ function Mostrar()
 			{
 				tipoDeMascota=prompt("Ingrese unicamente perro o gato");
 			}
-
+			if(tipoDeMascota=="gato")
+			{
+				edadDeGato=parseInt(edadDeGato)
+				edadDeGato=prompt("Ingrese edad de su gato")
+			}
+			if(edadDeGato<5)
+			{
+				nombreDeGato=prompt("Ingrese nombre de su gato")
+			}
 		}
 
 		else //salgo del if=="si" y queda como unica alternativa el "no" que fue validado en el while, almaceno que no tengo mascota
@@ -41,6 +50,11 @@ function Mostrar()
 		}
 
 		edad=prompt("Ingrese su edad");
+		edad=parseInt(edad)
+		while(edad<=0)
+		{
+			edad=prompt("Ingrese una edad valida")
+		}
 
 		if(contador==1) //determino el mas viejo
 		{
@@ -58,13 +72,22 @@ function Mostrar()
 		{
 			edadPersonaMasViejaSinMascota=edadPersonaMasVieja;
 		}
-	
+		
+		if(edad>30&&tipoDeMascota=="gato"&&edadDeGato<5&&nombreDeGato=="")
+		{
+			contadorNombreDeGato=1
+		}
+		else if(contadorNombreDeGato=1)
+		{
+			alert("Su gato se llama: "+nombreDeGato);
+		}
 		contador++;
 	}
 
 }
 
 /* cat code (nombre del primer gato de una mujer mayor a 30 y que el gato no tenga mas de 5 años)
+
 			if(mascota=="gato")
 				{
 				contadorGatos++;
