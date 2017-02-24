@@ -64,7 +64,7 @@ function Mostrar()
 
 }
 
-/* cat code
+/* cat code (nombre del primer gato de una mujer mayor a 30 y que el gato no tenga mas de 5 años)
 			if(mascota=="gato")
 				{
 				contadorGatos++;
