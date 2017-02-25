@@ -42,7 +42,7 @@ function NumerosPrimos ()
 	}
 	else
 	{
-		console.log(recorrido)
+		console.log("el "+recorrido+" es primo")
 	}
 }
 }
