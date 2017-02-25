@@ -9,5 +9,40 @@ e.	Se pedirán un número positivo y se mostrará la cantidad de números Primos
 */
 function ComenzarIngreso () 
 {
- 	
+ 	var recorrido;
+	var numeroIngresado;
+	var anteriores;
+	var noEsPrimo;
+}
+
+function NumerosPrimos ()
+{
+	var recorrido;
+	var numeroIngresado;
+	var anteriores;
+	var noEsPrimo;
+
+	numeroIngresado=document.getElementById('numero').value;
+	numeroIngresado=parseInt(numeroIngresado)
+
+	for(recorrido=2;recorrido<=numeroIngresado;recorrido++)
+{	
+	noEsPrimo="no";
+	for(anteriores=2;anteriores<recorrido;anteriores++)
+	{
+		if(recorrido%anteriores==0)
+		{
+			noEsPrimo="si"
+			break;
+		}
+	}
+	if(noEsPrimo=="si")
+	{
+
+	}
+	else
+	{
+		console.log(recorrido)
+	}
+}
 }
