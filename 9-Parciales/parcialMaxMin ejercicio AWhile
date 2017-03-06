@@ -9,6 +9,12 @@ while(contador<=24)
 	ingresoVentas=prompt("Ingrese el importe de su venta");
 	ingresoVentas=parseInt(ingresoVentas);
 	
+while(ingresoVentas<=0)
+{
+	ingresoVentas=prompt("El ingreso de las ventas no puede ser menor a 0");
+	ingresoVentas=parseInt(ingresoVentas);
+}
+	
 		if(contador==1)
 		{
 			ingresoVentasMax=ingresoVentas;
