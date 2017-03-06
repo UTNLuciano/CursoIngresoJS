@@ -53,7 +53,6 @@ while(ingresoVentas<=0)
 	while(contador<=99)
 	{
 		contador++
-		alumnos=prompt("Ingrese nombre del alumno")
 		notas=prompt("Ingrese nota del alumno")
 		notas=parseInt(notas)
 		acumuladorNotas=acumuladorNotas+notas;
