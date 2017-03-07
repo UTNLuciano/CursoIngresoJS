@@ -34,10 +34,14 @@ while(ingresoVentas<=0)
 			}
 
 		}
+			if(contador==25) //Si termina de contar muestra recien ahi el maximo y minimo, de otra forma lo mostraria siempre que se ingrese un dato
+			{
+				console.log("Su importe max: "+ingresoVentasMax);
+				console.log("Su importe min: "+ingresoVentasMin);
+			}
 
 }
-	console.log("Su importe max: "+ingresoVentasMax);
-	console.log("Su importe min: "+ingresoVentasMin);
+	
 
 	_________________________________________
 
